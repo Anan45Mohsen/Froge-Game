@@ -1,0 +1,67 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.container , .buttons-container{
+    background:transparent;
+}
+.land{
+    position: relative;
+}
+.froge{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+     transform: translate(-50%, -50%);
+     display: none;
+}
+.buttons-container{
+  
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 200px; /* Set the desired height of the container */   
+        margin-top:10%;
+}
+.buttons {
+        color: white;
+        padding:20px 60px;
+        margin: 10px;
+        background-color: rgb(2, 129, 2);
+        border-radius:10px;
+        border: none;
+ }
+   
+
+.buttons:hover{
+    cursor: pointer;
+}
+
+img{
+    width:100%;
+    border-radius:50%;
+}
+.froge img{
+    width: 80%;
+}
+
+
+@media (max-width: 767px) {
+    .buttons{
+        padding:5px 10px;
+        margin:5px;   
+    }
+}
+@media  screen and (max-width : 320px){
+    .buttons{
+        padding:8px 10px;
+        margin: 2px;
+    }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+   .buttons{
+    padding: 15px 45px;
+    margin: 8px;
+   }
+  }
